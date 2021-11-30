@@ -8,7 +8,9 @@ before_install:
   - pip install -U pip
   - pip install -U pytest
   - pip install -U pandas
-  
+
+install: pip install --user -r requirements.txt
+
 script: pytest -v test_recipes.py
 
 deploy:
