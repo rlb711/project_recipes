@@ -1,3 +1,3 @@
 from setuptools import setup
 
-setup(name="Tox Testing")
+setup(name="Project Recipes")
