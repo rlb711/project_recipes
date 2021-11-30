@@ -1,19 +1,7 @@
-language: python
-
-python:
- - "3.8"
-
-before_install:
-  - python --version
-  - pip install -U pip
-  - pip install -U pytest
-  
-script: pytest
-
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep_history: true
-  on:
-    branch: main
+echo "# project_recipes" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M test
+git remote add origin https://github.com/rlb711/project_recipes.git
+git push -u origin test
