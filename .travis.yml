@@ -9,7 +9,7 @@ before_install:
   - pip install -U pytest
   - pip install -U pandas
 
-script: pytest -v test_recipes.py
+script: pytest
 
 deploy:
   provider: pages
