@@ -5,7 +5,7 @@ import pandas as pd
 import os
 
 path2 = os.path.dirname(os.path.realpath(__file__))
-df = pd.read_csv(path2 + '\\data\\recipes.csv')
+df = pd.read_csv(path2 + '/data/recipes.csv')
 
 class RecipeList(object):
     def __new__(cls, *args, **kwargs):
@@ -43,7 +43,7 @@ class Recipes(object):
         
         s = df['filename']
         x = s[self.num]
-        f = open(f"{path2}\\data\\{x}",'r')
+        f = open(f"{path2}/data/{x}",'r')
         Lines = f.readlines()
 
         count = 0
